@@ -11,10 +11,10 @@ class Post(models.Model):
 	published_date = models.DateTimeField(blank=True, null=True)
 
 	#method that publishes the post along with the date time property of that current instance
-def publish(self):
-	self.published_date = timezone.now()
-	self.save()
-	
-	# returns a string value 
-def __str__(self):
-	return self.title
+	def publish(self):
+		self.published_date = timezone.now()
+		self.save()
+		
+		# returns a string value 
+	def __str__(self):
+		return self.title
