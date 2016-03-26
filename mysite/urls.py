@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 	# causes urls to redirect all requests for default page to blog
 	url(r'', include('blog.urls')),
+
 ]
