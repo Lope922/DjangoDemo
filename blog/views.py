@@ -3,6 +3,7 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import PostForm
 
+# think of these views as the web pages that are returned similar to flask @app.route
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

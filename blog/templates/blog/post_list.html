@@ -1,9 +1,11 @@
 {% extends 'blog/base.html' %}
 {% load staticfiles %}
 
+<!-- this is the html page that displays posts as a list -->
 <html>
     <head>
         <title>My First blog</title>
+        <!-- Here is where the bootstap imports are -->
         <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -13,6 +15,7 @@
         <div class="page-header">
             <h1><a href="/">Carlos' Blog</a></h1>
         </div>
+
         {% block content %}
         {% for post in posts %}
             <div class="post">

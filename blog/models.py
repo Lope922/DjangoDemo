@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+# model for a post
 class Post(models.Model):
     # attributes for each post , along with the input field that will be used.
     author = models.ForeignKey('auth.User')
