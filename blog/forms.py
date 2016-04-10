@@ -9,5 +9,5 @@ class PostForm(forms.ModelForm):
         # the input fields will have title and post/text inputs
         fields = ("title", "text")
 
-    #author is not included becausae it should be the user that is currently logged in.
+    # author is not included because it should be the user that is currently logged in.
 

@@ -15,7 +15,10 @@
     <div class="page-header">
         <!-- for making sure user is authenticated before showing the page which at this point is just the admin account -->
         {% if user.is_authenticated %}
+            <!-- this is where the add post button is mapped to through the url 'post_new'  -->
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <!-- here is the edit button clicking the button will redirect the user to the post draft list.  -->
+            <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
         {% endif %}
          <!-- this link below is for linking the page form -->
 
